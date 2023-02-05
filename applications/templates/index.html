@@ -1,14 +1,13 @@
 {% extends 'layout.html' %}
 {% block content %}
-<div>
+<div class="container-fluid">
     <h1>To Do App</h1>
 
-    <form action="/add" method="post">
+    <form class="d-flex" action="/add" method="post">
         <div>
-            <label>Todo Title</label><br>
-            <input type="text" name="title" placeholder="Enter Todo...">
+            <input class="form-control" type="text" name="title" placeholder="Enter Todo...">
             <br>
-            <button type="submit">Add</button>
+            <button class="btn btn-outline-primary" type="submit">Add</button>
         </div>
     </form>
     <hr>
